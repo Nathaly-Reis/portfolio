@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+        height: 100vh;
+        box-sizing: border-box;
+        background: linear-gradient(to right, blue, rgb(34, 187, 187), white);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        color: white;
+}      
+
+.cabecalho {
+        padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu {
+        display: flex;
+        gap: 80px;
+}
+
+.cabecalho-menu-links {
+        font-family: 'Black Ops One', cursive;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+
+}
+
+.titulo-destaque {
+        font-family: 'Black Ops One', cursive;
+        color: #0f0285;
+}
+
+.conteudo {
+        height: auto;
+        flex-direction: column;
+        margin: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.apresentacao-conteudo {
+        width: 615px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        gap: 40px;
+        order: 2;
+}
+
+.apresentacao-conteudo-titulo {
+        font-family: 'Black Ops One', cursive;
+        font-size: 40px;
+        text-align: justify;
+}
+
+.apresentacao-conteudo-paragrafo {
+        font-size: 30px;
+        font-family: 'Playfair Display', serif; 
+        text-align: justify;
+}
+
+.apresentacao-links {
+        width: 500px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+}
+
+.botao1 {
+        background-color: #7f8bf7;
+        color: black;
+        width: 500px;
+        height: 70px;
+        text-align: center;
+        align-items: center;
+        border: 2px solid #330163;
+        border-radius: 50px;
+        font-size: 36px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Bebas Neue', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+}
+
+.botao1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #130553);
+        transition: 0.5s;
+}
+
+.botao1:hover::before {
+        left: 100%;
+}
+
+.botao1 i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+}
+
+.botao2 {
+        background-color: #22b9fa;
+    color: #022a3f;
+    width: 500px;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #022f47;
+    border-radius: 50px;
+    font-size: 36px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #4d4bf0);
+        transition: 0.5s;
+    }
+
+    .botao2:hover::before {
+        left: 100%;
+    }
+
+    .botao2 i {
+        position: absolute;
+        font-size: 90px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+.imagem {
+        max-width: 80%;
+        width: 450px;
+        height: 690px;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px #011ebe;
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        order: 1;
+        margin-bottom: 45px;
+        backdrop-filter: blur(50px);
+}
+
+.imagem img {
+        object-fit: cover;
+        display: block;
+        width: 100%;
+        height: 100%;
+}
+
+.imagem::before,
+.imagem::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 10px solid #06047e;
+        background-color: transparent;
+}
+
+.imagem::before {
+        top: 0;
+        left: 0; 
+        border-top-left-radius: 10px;
+        border-width: 2px 0 0 2px;
+}
+
+.imagem::after {
+        bottom: 0;
+        right: 0;
+        border-bottom-right-radius: 10px;
+        border-width: 0 2px 2px 0;
+}
+
+.imagem:hover {
+        transform: scale(1.1);
+}
+
